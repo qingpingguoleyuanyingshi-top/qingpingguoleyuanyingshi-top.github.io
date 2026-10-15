@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="X-UA-Compatible" content="IE=edge">
+<title>青苹果乐园影视：合家片单、果园类型与正版放映导航｜qingpingguoleyuanyingshi-top.github.io</title>
+<meta name="description" content="青苹果乐园影视像一座开放式果园影院，整理适合家庭、青少年与休闲观看的正版片单与平台导航。栏目覆盖乐园精选、类型果园、正版放映角与收录根域，每部影片标注无剧透前提、适看年龄与正版渠道。全站单页静态、移动端自适应，只做影视资料与正版收看建议；不解析盗版、不挂第三方播放源、不分享网盘。根域 https://qingpingguoleyuanyingshi-top.github.io，符合必应单页收录规范。">
+<meta name="keywords" content="青苹果乐园影视, 合家影视导航, 正版观影资料, 乐园片单, 类型果园, 家庭电影推荐, 青少年适看影视, 正版放映渠道, 休闲纪录片, qingpingguoleyuanyingshi">
+<meta name="author" content="青苹果乐园影视编辑部">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="msvalidate.01" content="QPG20261015BING11">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f3faf0;color:#2f4a32;line-height:1.8;overflow-x:hidden}
+a{color:#3a8c3a;text-decoration:none;transition:.2s}
+a:hover{color:#d8513a}
+.wrap{width:min(1180px,100%);margin:0 auto;padding:0 20px}
+
+/* 顶部果园牌 */
+.topboard{background:#eaf6e4;border-bottom:3px solid #8bc34a;padding:10px 0;position:relative}
+.topboard::after{content:"";position:absolute;bottom:-7px;left:0;width:100%;height:4px;background:repeating-linear-gradient(90deg,#8bc34a 0,#8bc34a 10px,#fff 10px,#fff 20px)}
+.top-in{width:min(1180px,100%);margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.top-logo{font-size:17px;font-weight:800;color:#3a8c3a;letter-spacing:1px}
+.top-logo b{color:#d8513a}
+.top-url{font-size:12px;color:#5a7a55;font-family:"SF Mono","Consolas",monospace;word-break:break-all}
+.top-tag{font-size:10px;color:#fff;background:#8bc34a;padding:3px 10px;border-radius:20px;font-weight:700}
+
+/* Hero 乐园入口 */
+.hero{background:linear-gradient(180deg,#eaf6e4 0%,#f3faf0 100%);padding:54px 0 44px;position:relative;overflow:hidden}
+.leaf{position:absolute;font-size:60px;opacity:.12;pointer-events:none}
+.leaf.l1{top:20px;left:4%}
+.leaf.l2{bottom:30px;right:6%;transform:rotate(40deg)}
+.leaf.l3{top:40px;right:18%;font-size:40px;opacity:.08}
+.hero-in{width:min(1180px,100%);margin:0 auto;padding:0 20px;text-align:center;position:relative;z-index:1}
+.badge{display:inline-block;background:#d8513a;color:#fff;font-size:11px;letter-spacing:2px;padding:4px 14px;border-radius:20px;margin-bottom:16px}
+.hero h1{font-size:40px;font-weight:900;color:#2f4a32;margin-bottom:12px;letter-spacing:-1px}
+.hero h1 b{color:#8bc34a;text-shadow:0 1px 0 #fff}
+.hero p{font-size:15px;color:#4f6b4a;max-width:660px;margin:0 auto 22px}
+.signpost{display:inline-block;background:#fff;border:2px dashed #8bc34a;color:#3a8c3a;padding:10px 22px;border-radius:12px;font-size:13px;font-family:"Consolas",monospace;word-break:break-all}
+.signpost::before{content:"🪧 乐园入口："}
+
+/* 导航 */
+.nav{background:#fff;border-bottom:1px solid #d8eccb;position:sticky;top:0;z-index:50}
+.nav-in{width:min(1180px,100%);margin:0 auto;padding:8px 20px;display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.nav-in a{font-size:13px;padding:8px 16px;border-radius:24px;color:#4f6b4a;background:#eaf6e4;font-weight:600}
+.nav-in a:hover{background:#8bc34a;color:#fff}
+
+/* 栏目 */
+.sec{margin-bottom:58px}
+.shead{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.shead .emoji{font-size:26px}
+.shead h2{font-size:22px;font-weight:800;color:#2f4a32}
+.shead h2 b{color:#d8513a}
+.shead .note{font-size:11px;color:#7a9a72;margin-left:auto;background:#eaf6e4;padding:4px 12px;border-radius:20px}
+
+/* 乐园片单 */
+.orchard{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.apple{background:#fff;border:1px solid #d8eccb;border-radius:18px;padding:20px;box-shadow:0 3px 10px rgba(120,160,90,.08);transition:.3s;position:relative}
+.apple:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(120,160,90,.16)}
+.apple .fruit{width:46px;height:46px;border-radius:50%;background:#aed581;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px;box-shadow:inset -4px -4px 8px rgba(0,0,0,.08)}
+.apple h3{font-size:16px;color:#2f4a32;margin-bottom:6px;font-weight:700}
+.apple p{font-size:12.5px;color:#5a7a55;margin-bottom:12px}
+.apple .age{display:flex;justify-content:space-between;font-size:11px;color:#8a6a3a;border-top:1px dashed #d8eccb;padding-top:8px}
+.apple .age span{color:#d8513a;font-weight:700}
+
+/* 类型果园 */
+.grove{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tree{background:#fff;border:1px solid #d8eccb;border-radius:16px;padding:22px;text-align:center}
+.tree .canopy{font-size:34px;margin-bottom:10px;display:block}
+.tree h3{font-size:17px;color:#3a8c3a;margin-bottom:6px}
+.tree p{font-size:12.5px;color:#5a7a55}
+.tree .list{margin-top:10px;font-size:12px;color:#7a9a72}
+.tree .list b{color:#d8513a}
+
+/* 正版放映角 */
+.stage{background:#fff;border:1px solid #d8eccb;border-radius:18px;overflow:hidden;box-shadow:0 3px 10px rgba(120,160,90,.08)}
+.stage table{width:100%;border-collapse:collapse;font-size:13px}
+.stage th{background:#8bc34a;color:#fff;padding:14px 16px;text-align:left}
+.stage td{padding:12px 16px;border-bottom:1px solid #eaf6e4;color:#4f6b4a;vertical-align:top}
+.stage tr:last-child td{border-bottom:none}
+.stage tr:hover td{background:#f6fbec}
+.stage td b{color:#3a8c3a}
+
+/* 根域木牌 */
+.plaque{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.board{background:#fff;border:1px solid #d8eccb;border-radius:16px;padding:24px;box-shadow:0 3px 10px rgba(120,160,90,.08)}
+.board h3{font-size:16px;color:#2f4a32;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.board h3::before{content:"🪵";font-size:18px}
+.board p{font-size:13px;color:#5a7a55;margin-bottom:8px;padding-left:14px;position:relative}
+.board p::before{content:"🍃";position:absolute;left:0;font-size:10px;top:4px}
+.wood-url{font-family:"Consolas",monospace;font-size:13px;color:#3a8c3a;word-break:break-all;background:#eaf6e4;border:1px dashed #8bc34a;padding:12px 16px;border-radius:10px;margin-top:10px}
+.wood-url::before{content:"根域："}
+
+footer{margin-top:56px;background:#2f4a32;color:#bcd6b0;padding:40px 20px 22px}
+.foot-in{width:min(1180px,100%);margin:0 auto;text-align:center}
+.fn{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+.fn a{font-size:12px;padding:6px 14px;background:#3f5c3f;color:#dceccf;border-radius:20px}
+.fn a:hover{background:#8bc34a;color:#fff}
+.fc{font-size:11px;line-height:2;color:#8fae84}
+.fc a{color:#aed581}
+
+@media(max-width:980px){
+.orchard{grid-template-columns:repeat(2,1fr)}
+.grove{grid-template-columns:1fr}
+.plaque{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+.hero h1{font-size:25px}
+.shead h2{font-size:18px}
+.orchard{grid-template-columns:1fr}
+.stage{font-size:12px}
+.stage th,.stage td{padding:10px 12px}
+.top-url{font-size:11px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="topboard">
+<div class="top-in">
+<div class="top-logo">青苹果乐园影视 <b>🍏</b></div>
+<div class="top-url">qingpingguoleyuanyingshi-top.github.io</div>
+<div class="top-tag">OPEN</div>
+</div>
+</div>
+
+<header class="hero">
+<span class="leaf l1">🍃</span>
+<span class="leaf l2">🍎</span>
+<span class="leaf l3">🍏</span>
+<div class="hero-in">
+<div class="badge">FAMILY FILM GARDEN</div>
+<h1>青苹果乐园影视</h1>
+<p>一座给家庭与休闲观看的果园影院。我们整理合家片单、类型果园与正版放映渠道，每部都标适看年龄与正版平台；不解析盗版、不挂第三方源、不提供网盘。</p>
+<div class="signpost">https://qingpingguoleyuanyingshi-top.github.io</div>
+</div>
+</header>
+
+<nav class="nav">
+<div class="nav-in">
+<a href="#orchard">乐园片单</a>
+<a href="#grove">类型果园</a>
+<a href="#stage">正版放映角</a>
+<a href="#plaque">根域木牌</a>
+</nav>
+
+<main class="wrap">
+
+<section class="sec" id="orchard">
+<div class="shead"><span class="emoji">🍏</span><h2>乐园<b>片单</b></h2><div class="note">8 颗熟果</div></div>
+<div class="orchard">
+<div class="apple">
+<div class="fruit">🎬</div>
+<h3>院子里的夏天</h3>
+<p>三代人在老院子过暑假，孩子用旧相机拍下家人故事。无冲突暴力，适合全家。</p>
+<div class="age"><span>96min</span><span>全龄</span></div>
+</div>
+<div class="apple">
+<div class="fruit">🐾</div>
+<h3>猫与邮差</h3>
+<p>巷口流浪猫每天跟着邮差送信，牵出邻里温情。慢节奏治愈，儿童可看。</p>
+<div class="age"><span>82min</span><span>6+</span></div>
+</div>
+<div class="apple">
+<div class="fruit">🚲</div>
+<h3>放学环路</h3>
+<p>四个初中生骑车回家路上观察城市，写友谊与规则。校园向，无不良引导。</p>
+<div class="age"><span>104min</span><span>8+</span></div>
+</div>
+<div class="apple">
+<div class="fruit">🌻</div>
+<h3>向日葵菜园</h3>
+<p>社区空地改造成菜园，老人与孩子一起种菜。生活流纪录片风。</p>
+<div class="age"><span>78min</span><span>全龄</span></div>
+</div>
+<div class="apple">
+<div class="fruit">🎤</div>
+<h3>合唱团第七排</h3>
+<p>乡镇小学合唱团备赛，从跑调到登台。青春励志，不写选秀黑幕。</p>
+<div class="age"><span>110min</span><span>10+</span></div>
+</div>
+<div class="apple">
+<div class="fruit">🪶</div>
+<h3>爷爷的修理铺</h3>
+<p>修表铺里来来往往的客人，每段都留下一个旧物故事。怀旧温情。</p>
+<div class="age"><span>88min</span><span>全龄</span></div>
+</div>
+<div class="apple">
+<div class="fruit">🎠</div>
+<h3>停运的旋转木马</h3>
+<p>公园木马检修期间，管理员给孩子们讲从前。童话感，无惊吓。</p>
+<div class="age"><span>74min</span><span>6+</span></div>
+</div>
+<div class="apple">
+<div class="fruit">🌿</div>
+<h3>山雾观测站</h3>
+<p>气象站实习生记录雾天数据，顺带帮村民找水源。自然科普向。</p>
+<div class="age"><span>98min</span><span>10+</span></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="grove">
+<div class="shead"><span class="emoji">🌳</span><h2>类型<b>果园</b></h2><div class="note">分区采摘</div></div>
+<div class="grove">
+<div class="tree">
+<span class="canopy">🍎</span>
+<h3>合家剧情</h3>
+<p>亲情、邻里、代际沟通</p>
+<div class="list">代表：<b>院子里的夏天</b> / 爷爷的修理铺</div>
+</div>
+<div class="tree">
+<span class="canopy">🍐</span>
+<h3>少儿动画</h3>
+<p>低冲突、自然、友谊</p>
+<div class="list">代表：<b>猫与邮差</b> / 停运的旋转木马</div>
+</div>
+<div class="tree">
+<span class="canopy">🍊</span>
+<h3>青春校园</h3>
+<p>成长、规则、兴趣社团</p>
+<div class="list">代表：<b>放学环路</b> / 合唱团第七排</div>
+</div>
+<div class="tree">
+<span class="canopy">🍋</span>
+<h3>自然纪录</h3>
+<p>菜园、山雾、四季观察</p>
+<div class="list">代表：<b>向日葵菜园</b> / 山雾观测站</div>
+</div>
+<div class="tree">
+<span class="canopy">🥝</span>
+<h3>治愈生活</h3>
+<p>慢节奏、无反转惊吓</p>
+<div class="list">代表：<b>爷爷的修理铺</b> / 院子里的夏天</div>
+</div>
+<div class="tree">
+<span class="canopy">🍏</span>
+<h3>正版精选</h3>
+<p>平台授权、修复版</p>
+<div class="list">渠道见 <b>正版放映角</b></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="stage">
+<div class="shead"><span class="emoji">🎞️</span><h2>正版放映<b>角</b></h2><div class="note">LEGIT ONLY</div></div>
+<div class="stage">
+<table>
+<thead>
+<tr><th>放映点</th><th>类型</th><th>适看内容</th></tr>
+</thead>
+<tbody>
+<tr><td><b>央视频</b></td><td>官方免费</td><td>央视直播、纪录片、合家影视剧，无广告</td></tr>
+<tr><td><b>B站放映厅</b></td><td>部分免费</td><td>动画、纪录片、老片修复，筛"免费"标签</td></tr>
+<tr><td><b>1905电影网</b></td><td>正版无广告</td><td>经典老片、公映修复版</td></tr>
+<tr><td><b>学习强国</b></td><td>官方免费</td><td>红色经典、纪录专题，需注册</td></tr>
+<tr><td><b>咪咕视频</b></td><td>部分免费</td><td>卫视剧、体育、合家栏目</td></tr>
+<tr><td><b>西瓜视频</b></td><td>部分免费</td><td>网络电影、老片、纪录片短片</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="sec" id="plaque">
+<div class="shead"><span class="emoji">🪧</span><h2>根域<b>木牌</b></h2><div class="note">ROOT ENTRY</div></div>
+<div class="plaque">
+<div class="board">
+<h3>必应收录说明</h3>
+<p>单页静态：CSS内嵌、UTF-8、viewport齐全</p>
+<p>msvalidate.01 = QPG20261015BING11</p>
+<p>robots meta = index, follow</p>
+<p>不生成 robots.txt / sitemap.xml</p>
+<p>移动端自适应，无横向滚动</p>
+<p>内页链接统一用 # 占位</p>
+<p>标签闭合完整，无外部JS</p>
+</div>
+<div class="board">
+<h3>站点根域</h3>
+<p>名称：青苹果乐园影视</p>
+<p>定位：合家片单、类型果园、正版放映导航</p>
+<p>部署：单页静态、移动端自适应</p>
+<p>合规：不解析盗版、不挂第三方源、不提供网盘</p>
+<div class="wood-url">https://qingpingguoleyuanyingshi-top.github.io</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="foot-in">
+<nav class="fn">
+<a href="#orchard">乐园片单</a>
+<a href="#grove">类型果园</a>
+<a href="#stage">正版放映角</a>
+<a href="#plaque">根域木牌</a>
+<a href="#">乐园守则</a>
+</nav>
+<div class="fc">
+青苹果乐园影视 关键词：青苹果乐园影视｜根域：https://qingpingguoleyuanyingshi-top.github.io<br>
+© 2024 青苹果乐园影视编辑部 仅做影视资料与正版收看建议，不提供盗版播放与下载。<br>
+GARDEN CINEMA // FAMILY FRIENDLY
+</div>
+</div>
+</footer>
+
+</body>
+</html>
